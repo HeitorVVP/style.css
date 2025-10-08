@@ -1,0 +1,102 @@
+<!doctype html>
+<html>
+  <head>
+    <meta chearset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Página inicial</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body>
+<div id="nav">
+      <a href="#FirtsSec">Inicio</a>
+      <a href="#SecondSec">Projetos</a>
+      <a href="#ThirdSec">Contato</a>
+    </div>
+
+    <div id="FirtsSec" class="Secao">
+      <center>
+        <img src="Heitor/profile.png" width="300px" />
+        <h1>Heitor Vargas</h1>
+        <h2>Desenvolvedor Web</h2>
+        <p>
+          Bem-vindo ao meu portifolio!Aqui voce encontra alguns dos meus
+          projetos e um pouco da minha trajetoria como programador
+        </p>
+        <button><a href="#SecondSec">Ver meus projetos</a></button>
+      </center>
+    </div>
+
+    <div id="SecondSec">
+      <center>
+        <h1>Projetos</h1>
+        <p>Conteúdo da Seçao 2.</p>
+
+        <div class="Portofolio">
+          <h2>🌐Portofólio Pessoal</h2>
+          <p>
+            Meu site de apresentaaao profissional com informacoes e projetos.
+          </p>
+
+          <a href="#">Ver projeto</a>
+        </div>
+
+        <div class="Loja">
+          <h2>🛒Loja Virtual</h2>
+          <p>Prototipo de e-commerce com carrinho de compras em JavaScript.</p>
+
+          <a href="#">Ver projeto</a>
+        </div>
+
+        <div class="Dashboard">
+          <h2>🛒Dashboard de Dados</h2>
+          <p>Painel interativo para visualizacao de metricas e graficos.</p>
+
+          <a href="#">Ver projeto</a>
+        </div>
+      </center>
+    </div>
+
+    <div id="ThirdSec">
+      <center>
+        <h1>Contato</h1>
+        <p>
+          Entre em contato comigo pelo WhattsApp preenchendo o formulario abaixo
+        </p>
+      </center>
+      <center>
+        <form id="whatsappForm">
+        <input type="text" id="nome" placeholder="Seu nome" required />
+        <input type="email" id="email" placeholder="Seu email" required />
+        <textarea
+        id="mensagem"
+        placeholder="Digite sua mensagem"
+        required
+        ></textarea>
+        <button type="submit">Enviar no WhatsApp</button>
+        </form>
+        <div class="Net">
+        <h2>Me siga nas redes sociais:</h2>
+        <a href="https://youtube.com/@Heitorvvp" target="_blank">YouTube</a>
+        <a href="https://instagram.com" target="_blank">Instagram</a>
+        <a href="https://facebook.com" target="_blank">Facebook</a>
+        </div>
+        
+      </center>
+    </div>
+    </div>
+  </div>
+    
+    <script>
+      document.getElementById("whatsappForm").addEventListener("submit", function (e) {
+      e.preventDefault();
+      const nome = document.getElementById("nome").value;
+      const email = document.getElementById("email").value;
+      const mensagem = document.getElementById("mensagem").value;
+      const texto = `Olá, meu nome é ${nome} (${email}) e gostaria de falar: ${mensagem}`;
+      const url = `https://wa.me/5527988033634?text=${encodeURIComponent(texto)}`;
+      window.open(url, "_blank");
+      });
+    </script>
+  </body>
+</html>
