@@ -1,4 +1,3 @@
-
 body {
   padding: 0;
   margin: 0;
@@ -94,4 +93,203 @@ main {
     width: 100%;
     flex-direction: column;
   }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+#nav {
+  background-color: #555559;
+  color: white;
+  padding: 35px;
+  text-align: center;
+  height: 100px;
+  font-size: 25px;
+  width: 100%;
+  margin-top: -20px;
+  position: fixed;
+  z-index: 1000px;
+}
+
+#nav a {
+  padding: 30px;
+}
+
+#nav a:hover {
+  opacity: 0.7;
+  background-color: grey;
+  border-radius: 5px;
+}
+
+#FirtsSec {
+  background: white;
+  height: 900px;
+  margin-bottom: 100px;
+  font-size: 20px;
+}
+
+#FirtsSec img:hover {
+  transform: scale(1.2);
+  transition: transform 0.5s ease;
+}
+
+#FirtsSec button {
+  background-color: black;
+  color: white;
+  border-radius: 55px;
+  border: none;
+  width: 250px;
+  height: 50px;
+  font-size: 20px;
+}
+
+#FirtsSec button:hover {
+  transform: scale(1.2);
+  transition: transform 0.5s ease;
+}
+
+#SecondSec {
+  background: #e8e8e8;
+  height: 900px;
+  padding-top: 100px;
+}
+
+#ThirdSec {
+  background: #d6d6d6;
+  height: 900px;
+  padding-top: 100px;
+}
+
+#ThirdSec input {
+  border-radius: 5px;
+  border: none;
+  text-decoration: none;
+  width: 500px;
+  height: 40px;
+  font-size: 15px;
+  box-shadow: 10px 5px 5px #787373;
+  display: flex;
+  margin: 15px;
+}
+
+#ThirdSec textarea {
+  font-size: 15px;
+  border: none;
+  border-radius: 10px;
+  margin: 20px;
+  width: 500px;
+  height: 100px;
+  box-shadow: 10px 5px 5px #787373;
+  display: flex;
+}
+
+#ThirdSec button {
+  background-color: #2b2b2b;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  padding: 20px;
+  width: 500px;
+  box-shadow: 10px 5px 5px #787373;
+  cursor: pointer;
+}
+
+#ThirdSec button:hover {
+  transform: scale(1.1);
+  transition: transform 0.5s ease;
+}
+
+.Secao {
+  height: 900px;
+  padding-top: 100px;
+}
+
+.Portofolio {
+  background-color: white;
+  border-radius: 10px;
+  width: 400px;
+  height: 250px;
+  padding: 10px;
+  display: inline-block;
+  box-shadow: 10px 5px 5px #787373;
+  margin: 10px;
+  font-size: 20px;
+}
+
+.Portofolio a {
+  background-color: black;
+  color: white;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.Portofolio a:hover {
+  opacity: 0.7;
+  transition: 0, 5s;
+  transform: 0, 5s;
+}
+
+.Loja {
+  background-color: white;
+  border-radius: 10px;
+  width: 400px;
+  height: 250px;
+  padding: 10px;
+  display: inline-block;
+  margin: 20px;
+  box-shadow: 10px 5px 5px #787373;
+  font-size: 20px;
+}
+
+.Loja a {
+  background-color: black;
+  color: white;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.Loja a:hover {
+  opacity: 0.7;
+  transition: 0, 5s;
+  transform: 0, 5s;
+}
+
+.Dashboard {
+  background-color: white;
+  border-radius: 10px;
+  width: 400px;
+  height: 250px;
+  padding: 10px;
+  display: inline-block;
+  margin: 20px;
+  box-shadow: 10px 5px 5px #787373;
+  font-size: 20px;
+}
+
+.Dashboard a {
+  background-color: black;
+  color: white;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.Dashboard a:hover {
+  opacity: 0.7;
+  transition: 0, 5s;
+  transform: 0, 5s;
+}
+
+.Net a {
+  display: inline-block;
+  padding: 20px;
+  font-size: 20px;
+
+}
+
+.Net a:hover {
+  transform: scale(1.5);
+  transition: transform 0.5s;
+  opacity: 0.7;
+
 }
